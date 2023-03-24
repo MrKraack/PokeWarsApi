@@ -9,7 +9,7 @@ submitPokemon.addEventListener("click", async (e) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         .then((res) => res.json())
         .then((data) => {
-            resultPokemon.innerHTML = `Name: ${data.name} <br> id: ${data.id} <br> Height: ${data.height} <br> Weight: ${data.weight}`
+            resultPokemon.innerHTML = `Name: ${data.name} <br> Id: ${data.id} <br> Height: ${data.height} <br> Weight: ${data.weight}`
         })
     return response
 
